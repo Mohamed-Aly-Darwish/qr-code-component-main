@@ -1,83 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-
-/* font-family: "Outfit", sans-serif; */
-
-:root{
-    --font-family: "Outfit", sans-serif;
-    --fw-400: 400;
-    --fw-700: 700;
-    --fs: 15px;
-
-    /* Colors */
-
-    --White: hsl(0, 0%, 100%);
-    --Slate-300: hsl(212, 45%, 89%);
-    --Slate-500: hsl(216, 15%, 48%);
-    --Slate-900: hsl(218, 44%, 22%);
-
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
 }
 
 *,
 *::before,
-*::after{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-body{
-    background-color: var(--Slate-300);
-}
-img{ 
-    width: 288px;
-    border-radius: .8rem;
-
-    /* display: inline-block; */
-    /* width: 100%; */
-   
-    /* margin: 0 auto; */
-    /* display: flex; */
-
-}
-.main{
+body {
+       font-family: 'Outfit', sans-serif;
+    background-color: var(--light-gray);
     display: grid;
     place-items: center;
-    /* max-width: 375px; */
-    /* background-color: var(--White); */
-    height: 100dvh;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    /* max-width: 17rem; */
-}
-.main .qr-card{
-    background-color: var(--White);
-    /* max-width: 375px; */
-    max-width: 320px;
-    /* padding: 1.5rem; */
-    padding: 16px;
-    border-radius: .8rem;
-}
-/* .main .qr-card> *+*{
-    margin-top: 1rem;
-} */
- .txt{
-    padding: 0 16px;
- }
-.main .qr-card h1{
-    text-align: center;
-    font-weight: var(--fw-700);
-    color: var(--Slate-900);
-    font-size: 22px;
-    margin-top: 24px;
-    font-weight: var(--fw-700);
+    min-height: 100dvh;
 }
 
-.main .qr-card p{
+img {
+    max-width: 100%;
+    border-radius: 0.8rem;
+}
+
+.qr-card {
+    background-color: var(--white);
+    max-width: 320px;
+    padding: 16px;
+    border-radius: 1.2rem;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
     text-align: center;
-    color: var(--Slate-500);
+    margin: 1rem;
+}
+
+.txt {
+    padding: 0 10px;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-size: 22px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+p {
+    color: var(--grayish-blue);
     font-size: 15px;
-    margin: 16px;
-    font-weight: var(--fw-400);
+    margin-bottom: 24px;
 }
 
