@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+/* font-family: "Outfit", sans-serif; */
+
+:root{
+    --font-family: "Outfit", sans-serif;
+    --fw-400: 400;
+    --fw-700: 700;
+    --fs: 15px;
+
+    /* Colors */
+
+    --White: hsl(0, 0%, 100%);
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: var(--Slate-300);
+}
+img{
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: .8rem;
+
+}
+.main{
+    display: grid;
+    place-items: center;
+    /* max-width: 375px; */
+    /* background-color: var(--White); */
+    height: 100dvh;
+}
+.main .qr-card{
+    background-color: var(--White);
+    max-width: 375px;
+    padding: 1.5rem;
+    border-radius: .8rem;
+}
+.main .qr-card> *+*{
+    margin-top: 1rem;
+}
+.main .qr-card h1{
+    text-align: center;
+    font-weight: var(--fw-700);
+    color: var(--Slate-900);
+    font-size: 1.8rem;
+    line-height: 1.1;
+    font-weight: var(--fw-700);
+}
+
+.main .qr-card p{
+    text-align: center;
+    color: var(--Slate-500);
+    font-size: 15px;
+    font-weight: var(--fw-400);
+}
+
